@@ -1,0 +1,23 @@
+version: "3.4"
+
+services:
+  front-end:
+    extends: 
+      file: src/front-end/docker-compose.yml
+      service: front-end
+  back-end:
+    extends: 
+      file: src/back-end/docker-compose.yml
+      service: back-end
+  database:
+    extends: 
+      file: src/back-end/docker-compose.yml
+      service: database
+  database-adminer:
+    extends: 
+      file: src/back-end/docker-compose.yml
+      service: database-adminer
+
+networks:
+  default:
+    name: my-app

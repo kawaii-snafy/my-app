@@ -1,0 +1,17 @@
+version: "3.4"
+
+services:
+  front-end:
+    container_name: front-end
+    image: front-end
+    build: .
+    restart: always
+    environment:
+      NODE_ENV: development
+      REACT_APP_GRAPHQL_ENDPOINT: http://localhost:4000/graphql
+    ports:
+      - 3000:3000
+
+networks:
+  default:
+    name: my-app

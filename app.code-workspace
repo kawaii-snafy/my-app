@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "name": "app",
+      "path": "."
+    },
+    {
+      "name": "back-end",
+      "path": "./src/back-end"
+    },
+    {
+      "name": "front-end",
+      "path": "./src/front-end"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      ".vscode": true,
+      "*.code-workspace": true
+    }
+  }
+}

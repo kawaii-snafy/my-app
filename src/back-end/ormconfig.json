@@ -1,0 +1,19 @@
+{
+  "type": "postgres",
+  "host": "database",
+  "port": 5432,
+  "username": "my-app",
+  "password": "my-app",
+  "database": "my-app",
+  "entities": ["build/modules/**/*.entity.js", "modules/**/*.entity.ts"],
+  "subscribers": [
+    "build/modules/**/*.subscriber.js",
+    "modules/**/*.subscriber.ts"
+  ],
+  "migrations": [
+    "build/modules/**/*.migration.js",
+    "modules/**/*.migration.ts"
+  ],
+  "logging": ["error"],
+  "synchronize": true
+}
